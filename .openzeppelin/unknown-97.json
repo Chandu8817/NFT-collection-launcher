@@ -1,0 +1,706 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x6967f464dE2cb65f34Dc5E43Dbc3BF5F6EEBFf5a",
+    "txHash": "0xa2f5074460086ba035787506a1017eaffc512812f1972788e87d5c616d2a2936"
+  },
+  "proxies": [
+    {
+      "address": "0xF3741635d330A56Dd152071479C75DEC25166D52",
+      "txHash": "0xcafe6c154f699c330e803db3307fe2b8fbf7c6e1e7adcf77eec3bec1613ffce2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xE6aCD61C432c7b93e1dc24E4de510e79711CEB95",
+      "txHash": "0xcfd4b0c90af914e1b98c7da832bb9c91460744db84bc426a31e6fbe1d0f1a181",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8a49C5Fe1013a1316ff82d3D59cad4e2D7b24a32",
+      "txHash": "0x56a815654b33e0006309123c47e4cf116a80bab2ccc5066aa68c26188ccb2131",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4f5001DF9C2ffB49D0438C7B487e43253a5b51a5",
+      "txHash": "0xf766ce6616eb78e18b20d0a4a212627dc8af16d43af604a995b204f99454fccc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5f206399482eD1a31888Ba709eCf34ea06dbC5fe",
+      "txHash": "0x422dd45252de6eeebf35b28de9ead14fa86006c0b543aa579d6f1836f36b8e18",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x018ab3f758Af4BfF1b227A64B8d6c0F241a5108A",
+      "txHash": "0x60efc118da363ca6c000782fb7c590d7d7b2e39bb813534d966aa6001e29701a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xE85d5FBEA38c738263dA2fC45ebaa838E2428934",
+      "txHash": "0xda4b6d9efd6242c47b0c2fd9b59cf68ed5be66a056181116802bbc3d4f77c1c5",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5aCf52c5CA076815BF50877795c299BcAEA8d8D9",
+      "txHash": "0x6c363a313a958cda8527cb0d75778c386c6c584a8e4d43e17db600b44f67de17",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "88e5f420ed339488d602f0876e8f151d67ec3e7cafccb803efb0d3226eb36c50": {
+      "address": "0x6F2eFAe6f663D0bF9d5394F7eA5D0ADbc5617395",
+      "txHash": "0x0446fcd77ac7dcdb53bf15684a641ba8f61c1823ae30815b92d796b3c93f5e1b",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_allCollections",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_struct(addresses)4201_storage",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:13"
+          },
+          {
+            "label": "_userCollections",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_struct(addresses)4201_storage)",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:14"
+          },
+          {
+            "label": "brokerage",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:15"
+          },
+          {
+            "label": "brokerAddress",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_address",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:16"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(addresses)4201_storage)": {
+            "label": "mapping(address => struct AddressArrayLib.addresses)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(addresses)4201_storage": {
+            "label": "struct AddressArrayLib.addresses",
+            "members": [
+              {
+                "label": "array",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "d14a2d522eb4a9b677cfa2e20db5ce3cfb4d07e9232858dbae0832e92b5a6083": {
+      "address": "0x8A61F442C4a8B905d4610C4FFF211cf2556C58A4",
+      "txHash": "0xd9d04280902533f22129ad460b8f04a54973011a0d19116e0d848d522f22dcf1",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_allCollections",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_struct(addresses)4147_storage",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:13"
+          },
+          {
+            "label": "_userCollections",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_struct(addresses)4147_storage)",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:14"
+          },
+          {
+            "label": "brokerage",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:15"
+          },
+          {
+            "label": "brokerAddress",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_address",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:16"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(addresses)4147_storage)": {
+            "label": "mapping(address => struct AddressArrayLib.addresses)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(addresses)4147_storage": {
+            "label": "struct AddressArrayLib.addresses",
+            "members": [
+              {
+                "label": "array",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "536f11205de58ee4c75a0277667368663a7dfb3586e7b9b2539c8228960644c7": {
+      "address": "0x46fC4434047AC0416987867ae6569044E34A4C49",
+      "txHash": "0x100a05776f3b3706fac93d05cf128977abe15334b17d881dae5f178c1eb64afa",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_allCollections",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_struct(addresses)4377_storage",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:14"
+          },
+          {
+            "label": "_userCollections",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_struct(addresses)4377_storage)",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:15"
+          },
+          {
+            "label": "brokerage",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:16"
+          },
+          {
+            "label": "brokerAddress",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_address",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:17"
+          },
+          {
+            "label": "WBNB",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_contract(IWBNB)4367",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:18"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IWBNB)4367": {
+            "label": "contract IWBNB",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(addresses)4377_storage)": {
+            "label": "mapping(address => struct AddressArrayLib.addresses)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(addresses)4377_storage": {
+            "label": "struct AddressArrayLib.addresses",
+            "members": [
+              {
+                "label": "array",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "fec64f7cefb32739102b240d0de1527f2e62e6c28e97503cbb8bc575011bf99f": {
+      "address": "0x0966647fb10BaB3f43883aa875A062D7BF9B7FC2",
+      "txHash": "0x9389519daf3da93e52c1df9d038092d9e3e1750d034bf541e153e80a05bf2816",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_allCollections",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_struct(addresses)4388_storage",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:14"
+          },
+          {
+            "label": "_userCollections",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_struct(addresses)4388_storage)",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:15"
+          },
+          {
+            "label": "brokerage",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_uint256",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:16"
+          },
+          {
+            "label": "brokerAddress",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_address",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:17"
+          },
+          {
+            "label": "WBNB",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_contract(IWBNB)4378",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:18"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IWBNB)4378": {
+            "label": "contract IWBNB",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(addresses)4388_storage)": {
+            "label": "mapping(address => struct AddressArrayLib.addresses)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(addresses)4388_storage": {
+            "label": "struct AddressArrayLib.addresses",
+            "members": [
+              {
+                "label": "array",
+                "type": "t_array(t_address)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "3064cec182b5348919872a8b2de3923ea60c6303366dd3095a0083f9caa34e6b": {
+      "address": "0xc8C512d6183B5beE2a2da5EEA2137B82A24B01ce",
+      "txHash": "0xab97bb4408638372f5dc43d7acb1cf96c543f7af3ba0be91a1b435e8a325e63c",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_allCollections",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:16"
+          },
+          {
+            "label": "_userCollections",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:17"
+          },
+          {
+            "label": "platformPublicKey",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:18"
+          },
+          {
+            "label": "brokerage",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_uint256",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:19"
+          },
+          {
+            "label": "brokerAddress",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_address",
+            "contract": "NFTLaunchPad",
+            "src": "contracts/NFTLaunchPad.sol:20"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+            "label": "mapping(address => address[])",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}

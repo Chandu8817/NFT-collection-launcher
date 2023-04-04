@@ -1,0 +1,37 @@
+{
+  "name": "angel-dust-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ujjwalsahayatwork/angel-dust-contracts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ujjwalsahayatwork/angel-dust-contracts/issues"
+  },
+  "homepage": "https://github.com/ujjwalsahayatwork/angel-dust-contracts#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.2",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "hardhat": "^2.10.1",
+    "web3": "^1.7.5"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.1.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/contracts": "^4.7.2",
+    "@openzeppelin/contracts-upgradeable": "^4.7.2",
+    "@openzeppelin/hardhat-upgrades": "^1.20.0",
+    "erc721a": "^4.2.2",
+    "ethers": "^5.6.9",
+    "libraries": "^0.0.3"
+  }
+}
